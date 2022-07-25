@@ -102,7 +102,7 @@ class FancyScreen extends StatelessWidget {
 
 </td>
 <td>
-<img  src="https://i.postimg.cc/g2n0Cky4/box-hinter.png"  alt="">
+<img  src="D:\RobertoIV\InnopolisStudies\Innopolis Master's\Third Semester Master's\Flutter\flutter package\box_hinter\package_photos\box_hinter.png"  alt="">
 </td>
 </tr>
 </table>

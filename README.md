@@ -8,7 +8,7 @@ Box Hinter container package lets you add a hint or explanation box to bring fea
 1. Add the latest version of package to your pubspec.yaml (and run`dart pub get`):
 ```yaml
 dependencies:
-  box_hinter: ^0.0.2
+  box_hinter: ^0.0.3
 ```
 2. Import the package and use it in your Flutter App.
 ```dart
@@ -32,71 +32,31 @@ There are a number of properties that you can modify:
 <td>
 
 ```dart
-import 'package:flutter/material.dart';
-import 'package:box_hinter/box_hinter.dart';
-
-void main() => runApp(MyApp());
-
-/// this is your APP Main screen configuration
-class MyApp extends StatelessWidget {
-  MyApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: FancyScreen(),
-    );
-  }
-}
-
-/// this is a template to start building a UI
-/// to start adding any UI you want change what comes after the [ body: ] tag below
-
-class FancyScreen extends StatelessWidget {
-  const FancyScreen({Key? key}) : super(key: key);
+class BoxHinter extends StatelessWidget {
+  const BoxHinter({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-              padding: EdgeInsets.all(32),
-              child: Center(
-                child: ElevatedButton(
-                  child: const Text('Open the Widget!'),
-                  onPressed: (){
-                    openTheWidget(context);
-                  },
-                ),
-              )
-      ),
-    );
-  }
-
-  Widget widgetTwo(){
-    return Center(
-      child: BoxHinter(// <-- SEE HERE, THIS IS WHERE WE USE OUR BOX
-        image: const NetworkImage( 
-                'https://w7.pngwing.com/pngs/148/53/png-transparent-call-centre-customer-service-graphics-callcenteragent-call-center-man-comics-child-face.png',
-                scale: 7
+      body: Center(
+        child: const BoxHinter(// <-- SEE HERE, THIS IS WHERE WE USE OUR BOX HINTER
+          image: const NetworkImage(
+                  'https://w7.pngwing.com/pngs/148/53/png-transparent-call-centre-customer-service-graphics-callcenteragent-call-center-man-comics-child-face.png',
+                  scale: 7
+          ),
+          title: 'Hello World',
+          color1: Colors.yellow,
+          color2: Colors.green,
+          subtitle: 'This is Box Hinter!',
+          contentSize: 15.0,
+          onPressed: (){},
+          onTap: (){},
+          titleColor: Colors.black,
+          subtitleColor: Colors.black,
         ),
-        title: 'Hello World',
-        color1: Colors.yellow,
-        color2: Colors.green,
-        subtitle: 'This is Box Hinter!',
-        contentSize: 15.0,
-        onPressed: (){},
-        onTap: (){},
-        titleColor: Colors.black,
-        subtitleColor: Colors.black,
       ),
     );
-
   }
-
-  Future openTheWidget(BuildContext context) => showDialog(
-    context: context,
-    builder: (context) => widgetTwo(),
-  );
 }
 ```
 
@@ -106,7 +66,7 @@ class FancyScreen extends StatelessWidget {
 
 ## Package image
 
-<img  src="https://raw.githubusercontent.com/RobertronS/box_hinter/master/package_photos/box_hinter.png"  alt="Photo of Package" style="width: 300px; height: auto;">
+<img  src="https://raw.githubusercontent.com/RobertronS/box_hinter/master/package_photos/box_hinter.png"  alt="Photo of Package" style="width: 200px; height: auto;">
 
 ## Next Goals
 

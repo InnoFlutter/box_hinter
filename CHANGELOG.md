@@ -5,4 +5,8 @@ and also other features such as subtitle, height, width and many more properties
 
 ## 0.0.2
 
-Updated ReadMe. Addition of package image
+Updated ReadMe. Addition of package image.
+
+## 0.0.3
+
+Updated ReadMe. Addition of a clearer and more precise example of how to use the package.

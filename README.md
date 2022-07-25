@@ -8,7 +8,7 @@ Box Hinter container package lets you add a hint or explanation box to bring fea
 1. Add the latest version of package to your pubspec.yaml (and run`dart pub get`):
 ```yaml
 dependencies:
-  box_hinter: ^0.0.1
+  box_hinter: ^0.0.2
 ```
 2. Import the package and use it in your Flutter App.
 ```dart

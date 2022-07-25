@@ -1,0 +1,1 @@
+typedef HinterBoxCallback = Function();

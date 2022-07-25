@@ -103,6 +103,9 @@ class FancyScreen extends StatelessWidget {
 </td>
 </tr>
 </table>
+
+## Package image
+
 <img  src="https://raw.githubusercontent.com/RobertronS/box_hinter/master/package_photos/box_hinter.png"  alt="Photo of Package" style="width: 300px; height: auto;">
 
 ## Next Goals
